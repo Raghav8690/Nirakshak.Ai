@@ -1,0 +1,67 @@
+# ===========================
+# Python
+# ===========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+venv/
+.venv/
+env/
+*.db
+*.sqlite3
+
+# ===========================
+# Node.js / Frontend
+# ===========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ===========================
+# Environment & Secrets
+# ===========================
+.env
+.env.local
+.env.*.local
+
+# ===========================
+# IDE & Editor
+# ===========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ===========================
+# Docker
+# ===========================
+docker-compose.override.yml
+
+# ===========================
+# ChromaDB
+# ===========================
+chroma_data/
+chroma_persist/
+
+# ===========================
+# Build outputs
+# ===========================
+frontend/dist/
+backend/*.egg-info/
+
+# ===========================
+# Misc
+# ===========================
+*.log
+*.tmp
+.cache/

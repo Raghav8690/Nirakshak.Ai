@@ -1,0 +1,75 @@
+# ===========================
+# Nirikshak.AI — Docker Compose
+# ===========================
+# One-command local setup: docker-compose up --build
+
+version: "3.9"
+
+services:
+  # ---------------------------
+  # PostgreSQL Database
+  # ---------------------------
+  postgres:
+    image: postgres:15-alpine
+    container_name: nirikshak-postgres
+    environment:
+      POSTGRES_USER: nirikshak
+      POSTGRES_PASSWORD: nirikshak_pass
+      POSTGRES_DB: nirikshak_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nirikshak"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # ---------------------------
+  # FastAPI Backend
+  # ---------------------------
+  backend:
+    build:
+      context: ../backend
+      dockerfile: Dockerfile
+    container_name: nirikshak-backend
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://nirikshak:nirikshak_pass@postgres:5432/nirikshak_db
+      LLM_PROVIDER: mock
+      LLM_API_KEY: ""
+      CHROMA_PERSIST_DIR: /app/chroma_data
+      DEBUG: "true"
+      FRONTEND_URL: http://localhost:5173
+    volumes:
+      - ../backend:/app
+      - chroma_data:/app/chroma_data
+    depends_on:
+      postgres:
+        condition: service_healthy
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  # ---------------------------
+  # React Frontend
+  # ---------------------------
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    container_name: nirikshak-frontend
+    ports:
+      - "5173:5173"
+    environment:
+      VITE_API_BASE_URL: http://localhost:8000
+    volumes:
+      - ../frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+    command: npm run dev -- --host 0.0.0.0
+
+volumes:
+  postgres_data:
+  chroma_data:

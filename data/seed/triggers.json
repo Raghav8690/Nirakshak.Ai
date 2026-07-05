@@ -1,0 +1,884 @@
+[
+  {
+    "trigger_type": "emi_ending",
+    "signal_detected": "Customer has 4 recurring EMI payments averaging ₹12,500/month.",
+    "product_recommended": "SBI Home Loan Balance Transfer",
+    "product_category": "Loan",
+    "explanation": "You have active EMIs. SBI offers home loan balance transfer at 8.5% p.a. — potentially saving thousands per month.",
+    "confidence": 0.72,
+    "status": "dismissed",
+    "reasoning_trace": {
+      "trigger_type": "emi_ending",
+      "steps": [
+        "Detected 4+ recurring EMI payments",
+        "Calculated EMI burden vs income",
+        "Customer may benefit from restructuring",
+        "Retrieved SBI Home Loan as best-fit",
+        "Generated savings-focused explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 1
+  },
+  {
+    "trigger_type": "high_spend_category",
+    "signal_detected": "Customer spends 45% of outflow on Shopping.",
+    "product_recommended": "SBI Cashback Credit Card",
+    "product_category": "Card",
+    "explanation": "A significant portion of your spending is on shopping. An SBI Cashback Card earns up to 5% cashback, reducing your expenses.",
+    "confidence": 0.68,
+    "status": "pending",
+    "reasoning_trace": {
+      "trigger_type": "high_spend_category",
+      "steps": [
+        "Detected >40% spending in Shopping",
+        "Category matches cashback eligibility",
+        "No rewards card in portfolio",
+        "Retrieved SBI Cashback Card as best-fit",
+        "Generated savings explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 2
+  },
+  {
+    "trigger_type": "dormant_savings",
+    "signal_detected": "Account shows no significant debits in 65 days. Savings may be idle.",
+    "product_recommended": "SBI Fixed Deposit — Special Rate",
+    "product_category": "Investment",
+    "explanation": "Your savings have been idle. Idle money loses value to inflation. SBI FD offers 7.1% p.a. — your money works while staying safe.",
+    "confidence": 0.78,
+    "status": "accepted",
+    "reasoning_trace": {
+      "trigger_type": "dormant_savings",
+      "steps": [
+        "No significant debits in 60+ days",
+        "Account balance suggests idle savings",
+        "Conservative risk profile",
+        "Retrieved SBI FD special rate as best-fit",
+        "Generated inflation-protection explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 2
+  },
+  {
+    "trigger_type": "large_withdrawal",
+    "signal_detected": "Large withdrawal of ₹75,000 (65% of monthly income).",
+    "product_recommended": "SBI Personal Loan — Quick Disbursal",
+    "product_category": "Loan",
+    "explanation": "A large withdrawal was detected. If for an urgent need, SBI Personal Loan offers same-day disbursal at competitive rates to replenish savings.",
+    "confidence": 0.62,
+    "status": "pending",
+    "reasoning_trace": {
+      "trigger_type": "large_withdrawal",
+      "steps": [
+        "Detected withdrawal >50% of income",
+        "Pattern suggests urgent financial need",
+        "Credit profile supports eligibility",
+        "Retrieved SBI Personal Loan as best-fit",
+        "Generated savings-replenishment explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 2
+  },
+  {
+    "trigger_type": "emi_ending",
+    "signal_detected": "Customer has 4 recurring EMI payments averaging ₹12,500/month.",
+    "product_recommended": "SBI Home Loan Balance Transfer",
+    "product_category": "Loan",
+    "explanation": "You have active EMIs. SBI offers home loan balance transfer at 8.5% p.a. — potentially saving thousands per month.",
+    "confidence": 0.72,
+    "status": "dismissed",
+    "reasoning_trace": {
+      "trigger_type": "emi_ending",
+      "steps": [
+        "Detected 4+ recurring EMI payments",
+        "Calculated EMI burden vs income",
+        "Customer may benefit from restructuring",
+        "Retrieved SBI Home Loan as best-fit",
+        "Generated savings-focused explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 3
+  },
+  {
+    "trigger_type": "high_spend_category",
+    "signal_detected": "Customer spends 45% of outflow on Shopping.",
+    "product_recommended": "SBI Cashback Credit Card",
+    "product_category": "Card",
+    "explanation": "A significant portion of your spending is on shopping. An SBI Cashback Card earns up to 5% cashback, reducing your expenses.",
+    "confidence": 0.68,
+    "status": "pending",
+    "reasoning_trace": {
+      "trigger_type": "high_spend_category",
+      "steps": [
+        "Detected >40% spending in Shopping",
+        "Category matches cashback eligibility",
+        "No rewards card in portfolio",
+        "Retrieved SBI Cashback Card as best-fit",
+        "Generated savings explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 3
+  },
+  {
+    "trigger_type": "dormant_savings",
+    "signal_detected": "Account shows no significant debits in 65 days. Savings may be idle.",
+    "product_recommended": "SBI Fixed Deposit — Special Rate",
+    "product_category": "Investment",
+    "explanation": "Your savings have been idle. Idle money loses value to inflation. SBI FD offers 7.1% p.a. — your money works while staying safe.",
+    "confidence": 0.78,
+    "status": "accepted",
+    "reasoning_trace": {
+      "trigger_type": "dormant_savings",
+      "steps": [
+        "No significant debits in 60+ days",
+        "Account balance suggests idle savings",
+        "Conservative risk profile",
+        "Retrieved SBI FD special rate as best-fit",
+        "Generated inflation-protection explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 3
+  },
+  {
+    "trigger_type": "dormant_savings",
+    "signal_detected": "Account shows no significant debits in 65 days. Savings may be idle.",
+    "product_recommended": "SBI Fixed Deposit — Special Rate",
+    "product_category": "Investment",
+    "explanation": "Your savings have been idle. Idle money loses value to inflation. SBI FD offers 7.1% p.a. — your money works while staying safe.",
+    "confidence": 0.78,
+    "status": "accepted",
+    "reasoning_trace": {
+      "trigger_type": "dormant_savings",
+      "steps": [
+        "No significant debits in 60+ days",
+        "Account balance suggests idle savings",
+        "Conservative risk profile",
+        "Retrieved SBI FD special rate as best-fit",
+        "Generated inflation-protection explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 4
+  },
+  {
+    "trigger_type": "emi_ending",
+    "signal_detected": "Customer has 4 recurring EMI payments averaging ₹12,500/month.",
+    "product_recommended": "SBI Home Loan Balance Transfer",
+    "product_category": "Loan",
+    "explanation": "You have active EMIs. SBI offers home loan balance transfer at 8.5% p.a. — potentially saving thousands per month.",
+    "confidence": 0.72,
+    "status": "dismissed",
+    "reasoning_trace": {
+      "trigger_type": "emi_ending",
+      "steps": [
+        "Detected 4+ recurring EMI payments",
+        "Calculated EMI burden vs income",
+        "Customer may benefit from restructuring",
+        "Retrieved SBI Home Loan as best-fit",
+        "Generated savings-focused explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 4
+  },
+  {
+    "trigger_type": "salary_hike",
+    "signal_detected": "Salary increased by 30% — from ₹50,000 to ₹65,000.",
+    "product_recommended": "SBI Equity Mutual Fund SIP",
+    "product_category": "Investment",
+    "explanation": "Congratulations on your salary increase! Start investing the extra income with an SBI Equity SIP — as little as ₹500/month for long-term wealth creation.",
+    "confidence": 0.92,
+    "status": "pending",
+    "reasoning_trace": {
+      "trigger_type": "salary_hike",
+      "steps": [
+        "Detected salary increase >20%",
+        "Risk profile is moderate — equity SIP suitable",
+        "No existing investment transactions",
+        "Retrieved SBI MF SIP as best-fit",
+        "Generated explanation for incremental investment"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 4
+  },
+  {
+    "trigger_type": "high_spend_category",
+    "signal_detected": "Customer spends 45% of outflow on Shopping.",
+    "product_recommended": "SBI Cashback Credit Card",
+    "product_category": "Card",
+    "explanation": "A significant portion of your spending is on shopping. An SBI Cashback Card earns up to 5% cashback, reducing your expenses.",
+    "confidence": 0.68,
+    "status": "pending",
+    "reasoning_trace": {
+      "trigger_type": "high_spend_category",
+      "steps": [
+        "Detected >40% spending in Shopping",
+        "Category matches cashback eligibility",
+        "No rewards card in portfolio",
+        "Retrieved SBI Cashback Card as best-fit",
+        "Generated savings explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 5
+  },
+  {
+    "trigger_type": "large_withdrawal",
+    "signal_detected": "Large withdrawal of ₹75,000 (65% of monthly income).",
+    "product_recommended": "SBI Personal Loan — Quick Disbursal",
+    "product_category": "Loan",
+    "explanation": "A large withdrawal was detected. If for an urgent need, SBI Personal Loan offers same-day disbursal at competitive rates to replenish savings.",
+    "confidence": 0.62,
+    "status": "pending",
+    "reasoning_trace": {
+      "trigger_type": "large_withdrawal",
+      "steps": [
+        "Detected withdrawal >50% of income",
+        "Pattern suggests urgent financial need",
+        "Credit profile supports eligibility",
+        "Retrieved SBI Personal Loan as best-fit",
+        "Generated savings-replenishment explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 5
+  },
+  {
+    "trigger_type": "salary_hike",
+    "signal_detected": "Salary increased by 30% — from ₹50,000 to ₹65,000.",
+    "product_recommended": "SBI Equity Mutual Fund SIP",
+    "product_category": "Investment",
+    "explanation": "Congratulations on your salary increase! Start investing the extra income with an SBI Equity SIP — as little as ₹500/month for long-term wealth creation.",
+    "confidence": 0.92,
+    "status": "pending",
+    "reasoning_trace": {
+      "trigger_type": "salary_hike",
+      "steps": [
+        "Detected salary increase >20%",
+        "Risk profile is moderate — equity SIP suitable",
+        "No existing investment transactions",
+        "Retrieved SBI MF SIP as best-fit",
+        "Generated explanation for incremental investment"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 6
+  },
+  {
+    "trigger_type": "dormant_savings",
+    "signal_detected": "Account shows no significant debits in 65 days. Savings may be idle.",
+    "product_recommended": "SBI Fixed Deposit — Special Rate",
+    "product_category": "Investment",
+    "explanation": "Your savings have been idle. Idle money loses value to inflation. SBI FD offers 7.1% p.a. — your money works while staying safe.",
+    "confidence": 0.78,
+    "status": "accepted",
+    "reasoning_trace": {
+      "trigger_type": "dormant_savings",
+      "steps": [
+        "No significant debits in 60+ days",
+        "Account balance suggests idle savings",
+        "Conservative risk profile",
+        "Retrieved SBI FD special rate as best-fit",
+        "Generated inflation-protection explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 6
+  },
+  {
+    "trigger_type": "high_spend_category",
+    "signal_detected": "Customer spends 45% of outflow on Shopping.",
+    "product_recommended": "SBI Cashback Credit Card",
+    "product_category": "Card",
+    "explanation": "A significant portion of your spending is on shopping. An SBI Cashback Card earns up to 5% cashback, reducing your expenses.",
+    "confidence": 0.68,
+    "status": "pending",
+    "reasoning_trace": {
+      "trigger_type": "high_spend_category",
+      "steps": [
+        "Detected >40% spending in Shopping",
+        "Category matches cashback eligibility",
+        "No rewards card in portfolio",
+        "Retrieved SBI Cashback Card as best-fit",
+        "Generated savings explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 7
+  },
+  {
+    "trigger_type": "emi_ending",
+    "signal_detected": "Customer has 4 recurring EMI payments averaging ₹12,500/month.",
+    "product_recommended": "SBI Home Loan Balance Transfer",
+    "product_category": "Loan",
+    "explanation": "You have active EMIs. SBI offers home loan balance transfer at 8.5% p.a. — potentially saving thousands per month.",
+    "confidence": 0.72,
+    "status": "dismissed",
+    "reasoning_trace": {
+      "trigger_type": "emi_ending",
+      "steps": [
+        "Detected 4+ recurring EMI payments",
+        "Calculated EMI burden vs income",
+        "Customer may benefit from restructuring",
+        "Retrieved SBI Home Loan as best-fit",
+        "Generated savings-focused explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 7
+  },
+  {
+    "trigger_type": "dormant_savings",
+    "signal_detected": "Account shows no significant debits in 65 days. Savings may be idle.",
+    "product_recommended": "SBI Fixed Deposit — Special Rate",
+    "product_category": "Investment",
+    "explanation": "Your savings have been idle. Idle money loses value to inflation. SBI FD offers 7.1% p.a. — your money works while staying safe.",
+    "confidence": 0.78,
+    "status": "accepted",
+    "reasoning_trace": {
+      "trigger_type": "dormant_savings",
+      "steps": [
+        "No significant debits in 60+ days",
+        "Account balance suggests idle savings",
+        "Conservative risk profile",
+        "Retrieved SBI FD special rate as best-fit",
+        "Generated inflation-protection explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 7
+  },
+  {
+    "trigger_type": "high_spend_category",
+    "signal_detected": "Customer spends 45% of outflow on Shopping.",
+    "product_recommended": "SBI Cashback Credit Card",
+    "product_category": "Card",
+    "explanation": "A significant portion of your spending is on shopping. An SBI Cashback Card earns up to 5% cashback, reducing your expenses.",
+    "confidence": 0.68,
+    "status": "pending",
+    "reasoning_trace": {
+      "trigger_type": "high_spend_category",
+      "steps": [
+        "Detected >40% spending in Shopping",
+        "Category matches cashback eligibility",
+        "No rewards card in portfolio",
+        "Retrieved SBI Cashback Card as best-fit",
+        "Generated savings explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 8
+  },
+  {
+    "trigger_type": "dormant_savings",
+    "signal_detected": "Account shows no significant debits in 65 days. Savings may be idle.",
+    "product_recommended": "SBI Fixed Deposit — Special Rate",
+    "product_category": "Investment",
+    "explanation": "Your savings have been idle. Idle money loses value to inflation. SBI FD offers 7.1% p.a. — your money works while staying safe.",
+    "confidence": 0.78,
+    "status": "accepted",
+    "reasoning_trace": {
+      "trigger_type": "dormant_savings",
+      "steps": [
+        "No significant debits in 60+ days",
+        "Account balance suggests idle savings",
+        "Conservative risk profile",
+        "Retrieved SBI FD special rate as best-fit",
+        "Generated inflation-protection explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 8
+  },
+  {
+    "trigger_type": "emi_ending",
+    "signal_detected": "Customer has 4 recurring EMI payments averaging ₹12,500/month.",
+    "product_recommended": "SBI Home Loan Balance Transfer",
+    "product_category": "Loan",
+    "explanation": "You have active EMIs. SBI offers home loan balance transfer at 8.5% p.a. — potentially saving thousands per month.",
+    "confidence": 0.72,
+    "status": "dismissed",
+    "reasoning_trace": {
+      "trigger_type": "emi_ending",
+      "steps": [
+        "Detected 4+ recurring EMI payments",
+        "Calculated EMI burden vs income",
+        "Customer may benefit from restructuring",
+        "Retrieved SBI Home Loan as best-fit",
+        "Generated savings-focused explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 9
+  },
+  {
+    "trigger_type": "salary_hike",
+    "signal_detected": "Salary increased by 30% — from ₹50,000 to ₹65,000.",
+    "product_recommended": "SBI Equity Mutual Fund SIP",
+    "product_category": "Investment",
+    "explanation": "Congratulations on your salary increase! Start investing the extra income with an SBI Equity SIP — as little as ₹500/month for long-term wealth creation.",
+    "confidence": 0.92,
+    "status": "pending",
+    "reasoning_trace": {
+      "trigger_type": "salary_hike",
+      "steps": [
+        "Detected salary increase >20%",
+        "Risk profile is moderate — equity SIP suitable",
+        "No existing investment transactions",
+        "Retrieved SBI MF SIP as best-fit",
+        "Generated explanation for incremental investment"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 9
+  },
+  {
+    "trigger_type": "rent_no_insurance",
+    "signal_detected": "Customer has been paying rent for 4+ months with no health insurance.",
+    "product_recommended": "SBI Arogya Premier Health Insurance",
+    "product_category": "Insurance",
+    "explanation": "You've been consistently paying rent, showing financial discipline. However, you don't have health insurance. A medical emergency could impact your savings. SBI Arogya Premier offers coverage starting at ₹500/month.",
+    "confidence": 0.87,
+    "status": "pending",
+    "reasoning_trace": {
+      "trigger_type": "rent_no_insurance",
+      "steps": [
+        "Detected consistent rent payments for 4+ months",
+        "No insurance premium transactions found",
+        "Customer profile suggests insurance gap",
+        "Retrieved SBI Arogya Premier as best-fit",
+        "Generated personalized explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 9
+  },
+  {
+    "trigger_type": "salary_hike",
+    "signal_detected": "Salary increased by 30% — from ₹50,000 to ₹65,000.",
+    "product_recommended": "SBI Equity Mutual Fund SIP",
+    "product_category": "Investment",
+    "explanation": "Congratulations on your salary increase! Start investing the extra income with an SBI Equity SIP — as little as ₹500/month for long-term wealth creation.",
+    "confidence": 0.92,
+    "status": "pending",
+    "reasoning_trace": {
+      "trigger_type": "salary_hike",
+      "steps": [
+        "Detected salary increase >20%",
+        "Risk profile is moderate — equity SIP suitable",
+        "No existing investment transactions",
+        "Retrieved SBI MF SIP as best-fit",
+        "Generated explanation for incremental investment"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 10
+  },
+  {
+    "trigger_type": "emi_ending",
+    "signal_detected": "Customer has 4 recurring EMI payments averaging ₹12,500/month.",
+    "product_recommended": "SBI Home Loan Balance Transfer",
+    "product_category": "Loan",
+    "explanation": "You have active EMIs. SBI offers home loan balance transfer at 8.5% p.a. — potentially saving thousands per month.",
+    "confidence": 0.72,
+    "status": "dismissed",
+    "reasoning_trace": {
+      "trigger_type": "emi_ending",
+      "steps": [
+        "Detected 4+ recurring EMI payments",
+        "Calculated EMI burden vs income",
+        "Customer may benefit from restructuring",
+        "Retrieved SBI Home Loan as best-fit",
+        "Generated savings-focused explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 10
+  },
+  {
+    "trigger_type": "large_withdrawal",
+    "signal_detected": "Large withdrawal of ₹75,000 (65% of monthly income).",
+    "product_recommended": "SBI Personal Loan — Quick Disbursal",
+    "product_category": "Loan",
+    "explanation": "A large withdrawal was detected. If for an urgent need, SBI Personal Loan offers same-day disbursal at competitive rates to replenish savings.",
+    "confidence": 0.62,
+    "status": "pending",
+    "reasoning_trace": {
+      "trigger_type": "large_withdrawal",
+      "steps": [
+        "Detected withdrawal >50% of income",
+        "Pattern suggests urgent financial need",
+        "Credit profile supports eligibility",
+        "Retrieved SBI Personal Loan as best-fit",
+        "Generated savings-replenishment explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 10
+  },
+  {
+    "trigger_type": "salary_hike",
+    "signal_detected": "Salary increased by 30% — from ₹50,000 to ₹65,000.",
+    "product_recommended": "SBI Equity Mutual Fund SIP",
+    "product_category": "Investment",
+    "explanation": "Congratulations on your salary increase! Start investing the extra income with an SBI Equity SIP — as little as ₹500/month for long-term wealth creation.",
+    "confidence": 0.92,
+    "status": "pending",
+    "reasoning_trace": {
+      "trigger_type": "salary_hike",
+      "steps": [
+        "Detected salary increase >20%",
+        "Risk profile is moderate — equity SIP suitable",
+        "No existing investment transactions",
+        "Retrieved SBI MF SIP as best-fit",
+        "Generated explanation for incremental investment"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 11
+  },
+  {
+    "trigger_type": "emi_ending",
+    "signal_detected": "Customer has 4 recurring EMI payments averaging ₹12,500/month.",
+    "product_recommended": "SBI Home Loan Balance Transfer",
+    "product_category": "Loan",
+    "explanation": "You have active EMIs. SBI offers home loan balance transfer at 8.5% p.a. — potentially saving thousands per month.",
+    "confidence": 0.72,
+    "status": "dismissed",
+    "reasoning_trace": {
+      "trigger_type": "emi_ending",
+      "steps": [
+        "Detected 4+ recurring EMI payments",
+        "Calculated EMI burden vs income",
+        "Customer may benefit from restructuring",
+        "Retrieved SBI Home Loan as best-fit",
+        "Generated savings-focused explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 12
+  },
+  {
+    "trigger_type": "dormant_savings",
+    "signal_detected": "Account shows no significant debits in 65 days. Savings may be idle.",
+    "product_recommended": "SBI Fixed Deposit — Special Rate",
+    "product_category": "Investment",
+    "explanation": "Your savings have been idle. Idle money loses value to inflation. SBI FD offers 7.1% p.a. — your money works while staying safe.",
+    "confidence": 0.78,
+    "status": "accepted",
+    "reasoning_trace": {
+      "trigger_type": "dormant_savings",
+      "steps": [
+        "No significant debits in 60+ days",
+        "Account balance suggests idle savings",
+        "Conservative risk profile",
+        "Retrieved SBI FD special rate as best-fit",
+        "Generated inflation-protection explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 12
+  },
+  {
+    "trigger_type": "rent_no_insurance",
+    "signal_detected": "Customer has been paying rent for 4+ months with no health insurance.",
+    "product_recommended": "SBI Arogya Premier Health Insurance",
+    "product_category": "Insurance",
+    "explanation": "You've been consistently paying rent, showing financial discipline. However, you don't have health insurance. A medical emergency could impact your savings. SBI Arogya Premier offers coverage starting at ₹500/month.",
+    "confidence": 0.87,
+    "status": "pending",
+    "reasoning_trace": {
+      "trigger_type": "rent_no_insurance",
+      "steps": [
+        "Detected consistent rent payments for 4+ months",
+        "No insurance premium transactions found",
+        "Customer profile suggests insurance gap",
+        "Retrieved SBI Arogya Premier as best-fit",
+        "Generated personalized explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 12
+  },
+  {
+    "trigger_type": "emi_ending",
+    "signal_detected": "Customer has 4 recurring EMI payments averaging ₹12,500/month.",
+    "product_recommended": "SBI Home Loan Balance Transfer",
+    "product_category": "Loan",
+    "explanation": "You have active EMIs. SBI offers home loan balance transfer at 8.5% p.a. — potentially saving thousands per month.",
+    "confidence": 0.72,
+    "status": "dismissed",
+    "reasoning_trace": {
+      "trigger_type": "emi_ending",
+      "steps": [
+        "Detected 4+ recurring EMI payments",
+        "Calculated EMI burden vs income",
+        "Customer may benefit from restructuring",
+        "Retrieved SBI Home Loan as best-fit",
+        "Generated savings-focused explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 13
+  },
+  {
+    "trigger_type": "rent_no_insurance",
+    "signal_detected": "Customer has been paying rent for 4+ months with no health insurance.",
+    "product_recommended": "SBI Arogya Premier Health Insurance",
+    "product_category": "Insurance",
+    "explanation": "You've been consistently paying rent, showing financial discipline. However, you don't have health insurance. A medical emergency could impact your savings. SBI Arogya Premier offers coverage starting at ₹500/month.",
+    "confidence": 0.87,
+    "status": "pending",
+    "reasoning_trace": {
+      "trigger_type": "rent_no_insurance",
+      "steps": [
+        "Detected consistent rent payments for 4+ months",
+        "No insurance premium transactions found",
+        "Customer profile suggests insurance gap",
+        "Retrieved SBI Arogya Premier as best-fit",
+        "Generated personalized explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 14
+  },
+  {
+    "trigger_type": "large_withdrawal",
+    "signal_detected": "Large withdrawal of ₹75,000 (65% of monthly income).",
+    "product_recommended": "SBI Personal Loan — Quick Disbursal",
+    "product_category": "Loan",
+    "explanation": "A large withdrawal was detected. If for an urgent need, SBI Personal Loan offers same-day disbursal at competitive rates to replenish savings.",
+    "confidence": 0.62,
+    "status": "pending",
+    "reasoning_trace": {
+      "trigger_type": "large_withdrawal",
+      "steps": [
+        "Detected withdrawal >50% of income",
+        "Pattern suggests urgent financial need",
+        "Credit profile supports eligibility",
+        "Retrieved SBI Personal Loan as best-fit",
+        "Generated savings-replenishment explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 14
+  },
+  {
+    "trigger_type": "salary_hike",
+    "signal_detected": "Salary increased by 30% — from ₹50,000 to ₹65,000.",
+    "product_recommended": "SBI Equity Mutual Fund SIP",
+    "product_category": "Investment",
+    "explanation": "Congratulations on your salary increase! Start investing the extra income with an SBI Equity SIP — as little as ₹500/month for long-term wealth creation.",
+    "confidence": 0.92,
+    "status": "pending",
+    "reasoning_trace": {
+      "trigger_type": "salary_hike",
+      "steps": [
+        "Detected salary increase >20%",
+        "Risk profile is moderate — equity SIP suitable",
+        "No existing investment transactions",
+        "Retrieved SBI MF SIP as best-fit",
+        "Generated explanation for incremental investment"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 14
+  },
+  {
+    "trigger_type": "high_spend_category",
+    "signal_detected": "Customer spends 45% of outflow on Shopping.",
+    "product_recommended": "SBI Cashback Credit Card",
+    "product_category": "Card",
+    "explanation": "A significant portion of your spending is on shopping. An SBI Cashback Card earns up to 5% cashback, reducing your expenses.",
+    "confidence": 0.68,
+    "status": "pending",
+    "reasoning_trace": {
+      "trigger_type": "high_spend_category",
+      "steps": [
+        "Detected >40% spending in Shopping",
+        "Category matches cashback eligibility",
+        "No rewards card in portfolio",
+        "Retrieved SBI Cashback Card as best-fit",
+        "Generated savings explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 15
+  },
+  {
+    "trigger_type": "emi_ending",
+    "signal_detected": "Customer has 4 recurring EMI payments averaging ₹12,500/month.",
+    "product_recommended": "SBI Home Loan Balance Transfer",
+    "product_category": "Loan",
+    "explanation": "You have active EMIs. SBI offers home loan balance transfer at 8.5% p.a. — potentially saving thousands per month.",
+    "confidence": 0.72,
+    "status": "dismissed",
+    "reasoning_trace": {
+      "trigger_type": "emi_ending",
+      "steps": [
+        "Detected 4+ recurring EMI payments",
+        "Calculated EMI burden vs income",
+        "Customer may benefit from restructuring",
+        "Retrieved SBI Home Loan as best-fit",
+        "Generated savings-focused explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 15
+  },
+  {
+    "trigger_type": "rent_no_insurance",
+    "signal_detected": "Customer has been paying rent for 4+ months with no health insurance.",
+    "product_recommended": "SBI Arogya Premier Health Insurance",
+    "product_category": "Insurance",
+    "explanation": "You've been consistently paying rent, showing financial discipline. However, you don't have health insurance. A medical emergency could impact your savings. SBI Arogya Premier offers coverage starting at ₹500/month.",
+    "confidence": 0.87,
+    "status": "pending",
+    "reasoning_trace": {
+      "trigger_type": "rent_no_insurance",
+      "steps": [
+        "Detected consistent rent payments for 4+ months",
+        "No insurance premium transactions found",
+        "Customer profile suggests insurance gap",
+        "Retrieved SBI Arogya Premier as best-fit",
+        "Generated personalized explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 16
+  },
+  {
+    "trigger_type": "salary_hike",
+    "signal_detected": "Salary increased by 30% — from ₹50,000 to ₹65,000.",
+    "product_recommended": "SBI Equity Mutual Fund SIP",
+    "product_category": "Investment",
+    "explanation": "Congratulations on your salary increase! Start investing the extra income with an SBI Equity SIP — as little as ₹500/month for long-term wealth creation.",
+    "confidence": 0.92,
+    "status": "pending",
+    "reasoning_trace": {
+      "trigger_type": "salary_hike",
+      "steps": [
+        "Detected salary increase >20%",
+        "Risk profile is moderate — equity SIP suitable",
+        "No existing investment transactions",
+        "Retrieved SBI MF SIP as best-fit",
+        "Generated explanation for incremental investment"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 17
+  },
+  {
+    "trigger_type": "dormant_savings",
+    "signal_detected": "Account shows no significant debits in 65 days. Savings may be idle.",
+    "product_recommended": "SBI Fixed Deposit — Special Rate",
+    "product_category": "Investment",
+    "explanation": "Your savings have been idle. Idle money loses value to inflation. SBI FD offers 7.1% p.a. — your money works while staying safe.",
+    "confidence": 0.78,
+    "status": "accepted",
+    "reasoning_trace": {
+      "trigger_type": "dormant_savings",
+      "steps": [
+        "No significant debits in 60+ days",
+        "Account balance suggests idle savings",
+        "Conservative risk profile",
+        "Retrieved SBI FD special rate as best-fit",
+        "Generated inflation-protection explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 17
+  },
+  {
+    "trigger_type": "high_spend_category",
+    "signal_detected": "Customer spends 45% of outflow on Shopping.",
+    "product_recommended": "SBI Cashback Credit Card",
+    "product_category": "Card",
+    "explanation": "A significant portion of your spending is on shopping. An SBI Cashback Card earns up to 5% cashback, reducing your expenses.",
+    "confidence": 0.68,
+    "status": "pending",
+    "reasoning_trace": {
+      "trigger_type": "high_spend_category",
+      "steps": [
+        "Detected >40% spending in Shopping",
+        "Category matches cashback eligibility",
+        "No rewards card in portfolio",
+        "Retrieved SBI Cashback Card as best-fit",
+        "Generated savings explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 18
+  },
+  {
+    "trigger_type": "large_withdrawal",
+    "signal_detected": "Large withdrawal of ₹75,000 (65% of monthly income).",
+    "product_recommended": "SBI Personal Loan — Quick Disbursal",
+    "product_category": "Loan",
+    "explanation": "A large withdrawal was detected. If for an urgent need, SBI Personal Loan offers same-day disbursal at competitive rates to replenish savings.",
+    "confidence": 0.62,
+    "status": "pending",
+    "reasoning_trace": {
+      "trigger_type": "large_withdrawal",
+      "steps": [
+        "Detected withdrawal >50% of income",
+        "Pattern suggests urgent financial need",
+        "Credit profile supports eligibility",
+        "Retrieved SBI Personal Loan as best-fit",
+        "Generated savings-replenishment explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 19
+  },
+  {
+    "trigger_type": "emi_ending",
+    "signal_detected": "Customer has 4 recurring EMI payments averaging ₹12,500/month.",
+    "product_recommended": "SBI Home Loan Balance Transfer",
+    "product_category": "Loan",
+    "explanation": "You have active EMIs. SBI offers home loan balance transfer at 8.5% p.a. — potentially saving thousands per month.",
+    "confidence": 0.72,
+    "status": "dismissed",
+    "reasoning_trace": {
+      "trigger_type": "emi_ending",
+      "steps": [
+        "Detected 4+ recurring EMI payments",
+        "Calculated EMI burden vs income",
+        "Customer may benefit from restructuring",
+        "Retrieved SBI Home Loan as best-fit",
+        "Generated savings-focused explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 20
+  },
+  {
+    "trigger_type": "high_spend_category",
+    "signal_detected": "Customer spends 45% of outflow on Shopping.",
+    "product_recommended": "SBI Cashback Credit Card",
+    "product_category": "Card",
+    "explanation": "A significant portion of your spending is on shopping. An SBI Cashback Card earns up to 5% cashback, reducing your expenses.",
+    "confidence": 0.68,
+    "status": "pending",
+    "reasoning_trace": {
+      "trigger_type": "high_spend_category",
+      "steps": [
+        "Detected >40% spending in Shopping",
+        "Category matches cashback eligibility",
+        "No rewards card in portfolio",
+        "Retrieved SBI Cashback Card as best-fit",
+        "Generated savings explanation"
+      ],
+      "model": "MockLLM v1.0"
+    },
+    "customer_id": 20
+  }
+]

@@ -2,8 +2,8 @@
   {
     "customer_id": 2,
     "event_type": "kyc_update",
-    "date": "2026-05-09T09:38:54.143307",
-    "description": "Vasudha Kunda updated KYC — address changed to Chennai",
+    "date": "2026-05-09T10:20:06.976901",
+    "description": "Bimala Raval updated KYC — address changed to Chennai",
     "data": {
       "new_city": "Chennai"
     }
@@ -11,8 +11,8 @@
   {
     "customer_id": 2,
     "event_type": "new_emi",
-    "date": "2026-02-28T09:38:54.143307",
-    "description": "Vasudha Kunda started a new EMI of ₹9,453/month for Personal Loan",
+    "date": "2026-02-28T10:20:06.976901",
+    "description": "Bimala Raval started a new EMI of ₹9,453/month for Personal Loan",
     "data": {
       "emi_amount": 9452.79,
       "purpose": "Personal Loan"
@@ -21,8 +21,8 @@
   {
     "customer_id": 5,
     "event_type": "salary_hike",
-    "date": "2026-06-16T09:38:54.143307",
-    "description": "Bhavini Gole received a salary increase of 47% (new salary: ₹243,385)",
+    "date": "2026-06-16T10:20:06.976901",
+    "description": "Yochana Shetty received a salary increase of 47% (new salary: ₹243,385)",
     "data": {
       "percentage": 47,
       "new_salary": 243384.96
@@ -31,8 +31,8 @@
   {
     "customer_id": 7,
     "event_type": "salary_hike",
-    "date": "2026-03-13T09:38:54.143307",
-    "description": "Anita Srinivasan received a salary increase of 26% (new salary: ₹235,639)",
+    "date": "2026-03-13T10:20:06.976901",
+    "description": "Harita Modi received a salary increase of 26% (new salary: ₹235,639)",
     "data": {
       "percentage": 26,
       "new_salary": 235638.9
@@ -41,8 +41,8 @@
   {
     "customer_id": 8,
     "event_type": "new_emi",
-    "date": "2026-05-30T09:38:54.143307",
-    "description": "Alexander Krish started a new EMI of ₹37,546/month for Education Loan",
+    "date": "2026-05-30T10:20:06.976901",
+    "description": "Orinder Bath started a new EMI of ₹37,546/month for Education Loan",
     "data": {
       "emi_amount": 37546.33,
       "purpose": "Education Loan"
@@ -51,8 +51,8 @@
   {
     "customer_id": 9,
     "event_type": "salary_hike",
-    "date": "2026-06-10T09:38:54.143307",
-    "description": "Saksham Dhar received a salary increase of 45% (new salary: ₹207,364)",
+    "date": "2026-06-10T10:20:06.976901",
+    "description": "Samaksh Bath received a salary increase of 45% (new salary: ₹207,364)",
     "data": {
       "percentage": 45,
       "new_salary": 207364.5
@@ -61,8 +61,8 @@
   {
     "customer_id": 9,
     "event_type": "large_withdrawal",
-    "date": "2026-02-18T09:38:54.143307",
-    "description": "Saksham Dhar made a large withdrawal of ₹118,562",
+    "date": "2026-02-18T10:20:06.976901",
+    "description": "Samaksh Bath made a large withdrawal of ₹118,562",
     "data": {
       "amount": 118561.83
     }
@@ -70,8 +70,8 @@
   {
     "customer_id": 9,
     "event_type": "new_emi",
-    "date": "2026-02-11T09:38:54.143307",
-    "description": "Saksham Dhar started a new EMI of ₹37,029/month for Car Loan",
+    "date": "2026-02-11T10:20:06.976901",
+    "description": "Samaksh Bath started a new EMI of ₹37,029/month for Car Loan",
     "data": {
       "emi_amount": 37028.61,
       "purpose": "Car Loan"
@@ -80,8 +80,8 @@
   {
     "customer_id": 10,
     "event_type": "new_emi",
-    "date": "2026-02-17T09:38:54.143307",
-    "description": "Manya Parsa started a new EMI of ₹13,480/month for Education Loan",
+    "date": "2026-02-17T10:20:06.976901",
+    "description": "Kamala Ganesan started a new EMI of ₹13,480/month for Education Loan",
     "data": {
       "emi_amount": 13479.52,
       "purpose": "Education Loan"
@@ -90,8 +90,8 @@
   {
     "customer_id": 11,
     "event_type": "account_dormancy",
-    "date": "2026-01-23T09:38:54.143307",
-    "description": "Yug Sanghvi's account has been dormant for 74 days with balance ₹308,492",
+    "date": "2026-01-23T10:20:06.976901",
+    "description": "Zaid Dhar's account has been dormant for 74 days with balance ₹308,492",
     "data": {
       "dormant_days": 74,
       "balance": 308491.98
@@ -100,8 +100,8 @@
   {
     "customer_id": 11,
     "event_type": "salary_hike",
-    "date": "2026-01-10T09:38:54.143307",
-    "description": "Yug Sanghvi received a salary increase of 27% (new salary: ₹155,913)",
+    "date": "2026-01-10T10:20:06.976901",
+    "description": "Zaid Dhar received a salary increase of 27% (new salary: ₹155,913)",
     "data": {
       "percentage": 27,
       "new_salary": 155912.82
@@ -110,8 +110,8 @@
   {
     "customer_id": 11,
     "event_type": "new_emi",
-    "date": "2026-05-15T09:38:54.143307",
-    "description": "Yug Sanghvi started a new EMI of ₹29,080/month for Car Loan",
+    "date": "2026-05-15T10:20:06.976901",
+    "description": "Zaid Dhar started a new EMI of ₹29,080/month for Car Loan",
     "data": {
       "emi_amount": 29080.02,
       "purpose": "Car Loan"
@@ -120,8 +120,8 @@
   {
     "customer_id": 12,
     "event_type": "salary_hike",
-    "date": "2026-06-12T09:38:54.143307",
-    "description": "Gaurika Pant received a salary increase of 17% (new salary: ₹182,360)",
+    "date": "2026-06-12T10:20:06.976901",
+    "description": "Veda Lal received a salary increase of 17% (new salary: ₹182,360)",
     "data": {
       "percentage": 17,
       "new_salary": 182359.71
@@ -130,8 +130,8 @@
   {
     "customer_id": 13,
     "event_type": "new_emi",
-    "date": "2026-02-05T09:38:54.143307",
-    "description": "Zaid Srinivasan started a new EMI of ₹16,095/month for Car Loan",
+    "date": "2026-02-05T10:20:06.976901",
+    "description": "Rayaan Viswanathan started a new EMI of ₹16,095/month for Car Loan",
     "data": {
       "emi_amount": 16095.14,
       "purpose": "Car Loan"
@@ -140,8 +140,8 @@
   {
     "customer_id": 13,
     "event_type": "new_dependent",
-    "date": "2026-05-24T09:38:54.143307",
-    "description": "Zaid Srinivasan added a new dependent (Spouse) to their account",
+    "date": "2026-05-24T10:20:06.976901",
+    "description": "Rayaan Viswanathan added a new dependent (Spouse) to their account",
     "data": {
       "relation": "Spouse"
     }
@@ -149,8 +149,8 @@
   {
     "customer_id": 14,
     "event_type": "kyc_update",
-    "date": "2026-06-21T09:38:54.143307",
-    "description": "Devansh Krishnan updated KYC — address changed to Hyderabad",
+    "date": "2026-06-21T10:20:06.976901",
+    "description": "Guneet Balasubramanian updated KYC — address changed to Hyderabad",
     "data": {
       "new_city": "Hyderabad"
     }
@@ -158,8 +158,8 @@
   {
     "customer_id": 14,
     "event_type": "new_emi",
-    "date": "2026-04-10T09:38:54.143307",
-    "description": "Devansh Krishnan started a new EMI of ₹45,579/month for Two-Wheeler Loan",
+    "date": "2026-04-10T10:20:06.976901",
+    "description": "Guneet Balasubramanian started a new EMI of ₹45,579/month for Two-Wheeler Loan",
     "data": {
       "emi_amount": 45579.0,
       "purpose": "Two-Wheeler Loan"
@@ -168,8 +168,8 @@
   {
     "customer_id": 15,
     "event_type": "new_dependent",
-    "date": "2026-05-09T09:38:54.143307",
-    "description": "Sanya Subramanian added a new dependent (Sibling) to their account",
+    "date": "2026-05-09T10:20:06.976901",
+    "description": "Prisha Gupta added a new dependent (Sibling) to their account",
     "data": {
       "relation": "Sibling"
     }
@@ -177,8 +177,8 @@
   {
     "customer_id": 16,
     "event_type": "large_withdrawal",
-    "date": "2026-07-03T09:38:54.143307",
-    "description": "Hritik Subramanian made a large withdrawal of ₹115,388",
+    "date": "2026-07-03T10:20:06.976901",
+    "description": "Frado Wable made a large withdrawal of ₹115,388",
     "data": {
       "amount": 115387.9
     }
@@ -186,8 +186,8 @@
   {
     "customer_id": 17,
     "event_type": "salary_hike",
-    "date": "2026-03-06T09:38:54.143307",
-    "description": "Girish Thakur received a salary increase of 20% (new salary: ₹84,746)",
+    "date": "2026-03-06T10:20:06.976901",
+    "description": "Parth Kanda received a salary increase of 20% (new salary: ₹84,746)",
     "data": {
       "percentage": 20,
       "new_salary": 84746.4
@@ -196,8 +196,8 @@
   {
     "customer_id": 19,
     "event_type": "new_emi",
-    "date": "2026-02-23T09:38:54.143307",
-    "description": "Xalak Deshpande started a new EMI of ₹16,511/month for Home Loan",
+    "date": "2026-02-23T10:20:06.976901",
+    "description": "Varsha Banik started a new EMI of ₹16,511/month for Home Loan",
     "data": {
       "emi_amount": 16511.26,
       "purpose": "Home Loan"
@@ -206,8 +206,8 @@
   {
     "customer_id": 19,
     "event_type": "account_dormancy",
-    "date": "2026-02-05T09:38:54.143307",
-    "description": "Xalak Deshpande's account has been dormant for 111 days with balance ₹168,026",
+    "date": "2026-02-05T10:20:06.976901",
+    "description": "Varsha Banik's account has been dormant for 111 days with balance ₹168,026",
     "data": {
       "dormant_days": 111,
       "balance": 168025.9
@@ -216,8 +216,8 @@
   {
     "customer_id": 20,
     "event_type": "account_dormancy",
-    "date": "2026-03-27T09:38:54.143307",
-    "description": "Shravya Mann's account has been dormant for 97 days with balance ₹621,990",
+    "date": "2026-03-27T10:20:06.976901",
+    "description": "Vasana Kuruvilla's account has been dormant for 97 days with balance ₹621,990",
     "data": {
       "dormant_days": 97,
       "balance": 621990.18

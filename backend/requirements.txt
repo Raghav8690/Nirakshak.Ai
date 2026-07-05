@@ -4,23 +4,23 @@
 # All free, open-source packages. No paid services.
 
 # Core
-fastapi==0.115.0
-uvicorn[standard]==0.30.6
-pydantic==2.9.0
-pydantic-settings==2.5.0
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
 
 # Database
-sqlalchemy==2.0.35
-psycopg2-binary==2.9.9
+sqlalchemy
+
 
 # Environment
-python-dotenv==1.0.1
+python-dotenv
 
 # Data Generation (also used by data/generator/)
-faker==28.4.1
+faker
 
 # CORS and utilities
-python-multipart==0.0.9
+python-multipart
 
 # Vector DB (free, embedded)
 # chromadb==0.5.5  # Uncomment when integrating real RAG
